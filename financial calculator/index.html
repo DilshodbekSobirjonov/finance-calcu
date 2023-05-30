@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Калькулятор доходности</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h2>Калькулятор доходности</h2>
+    <div class="input-group">
+      <label for="investment">Сумма инвестиции:</label>
+      <input type="number" id="investment" placeholder="Введите сумму инвестиции">
+    </div>
+    <div class="input-group">
+      <label for="interest">Процент ежедневной доходности:</label>
+      <input type="number" id="interest" placeholder="Введите процент доходности">
+    </div>
+    <div class="input-group">
+      <label for="period">Период:</label>
+      <select id="period">
+        <option value="daily">Ежедневный</option>
+        <option value="weekly">Еженедельный</option>
+        <option value="monthly">Ежемесячный</option>
+      </select>
+    </div>
+    <button onclick="calculate()">Рассчитать</button>
+    <div id="loader" class="hidden">
+      <div class="loader"></div>
+    </div>
+    <table id="resultTable" class="hidden"></table>
+    <div class="author">Website created by Dilshodbek and ChatGPT</div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
